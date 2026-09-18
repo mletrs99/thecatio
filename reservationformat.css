@@ -1,0 +1,97 @@
+/*
+    Emelly Torres
+    CS 310 - Introduction to Web Development
+    Project 2
+    Fall 2026
+*/
+
+/* Reservation page layout */
+
+.layout {
+    align-items: stretch;
+    display: flex;
+    font-size: smaller;
+    gap: 30px;
+    justify-content: space-between; /* spread flex items across the available space */
+}
+
+
+/* Images on each side */
+
+.image {
+    height: 800px;
+    object-fit: cover;
+    width: 350px;
+}
+  
+
+/* Middle reservation information layout */
+
+.reservation-info {
+    text-align: center;
+    width: 370px;
+}
+
+
+/* Reservations title */
+
+.reservation-info h1 {
+    letter-spacing: 2px;
+    margin-left: -15%;
+    margin-right: -15%;
+    margin-bottom: -1%;
+    text-align: center;
+}
+
+
+/* Line underneath Reservations */
+
+hr {
+    border: none;
+    border-top: 3px double #000;
+    margin-left: -50%;
+    margin-bottom: 35px;
+    width: 200%;
+
+}
+
+
+/* Reservation Option headings */
+
+.reservation-info h2 {
+    font-weight: 1000;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: -25%;
+    margin-right: -25%;
+}
+
+
+/* Description underneath headings */
+
+.reservation-info h3 {
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-left: -35%;
+    margin-right: -35%;
+}
+
+/* Additonal Info beneath description */
+
+.reservation-info h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: -35%;
+    margin-right: -35%;
+
+}
+
+.reservation-info p {
+    font-size: 14px;
+    font-weight: 450;
+    margin-top: 10px;
+    margin-left: -35%;
+    margin-right: -35%;
+}
