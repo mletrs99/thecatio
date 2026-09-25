@@ -133,13 +133,13 @@ hr {
         box-sizing: border-box;
     }
 
-    h2, h3, h4, p {
+    /* h2, h3, h4, p {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
         box-sizing: border-box;
         text-align: center;
-    }
+    } */
 
     /* * {
         outline: 1px solid red;
