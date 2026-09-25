@@ -117,6 +117,7 @@ hr {
     .menu-layout {
         display: block;
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
         padding: 20px;
     }
@@ -132,9 +133,9 @@ hr {
         box-sizing: border-box;
     }
 
-    * {
+    /* * {
         outline: 1px solid red;
-    }
+    } */
 
 }
 
