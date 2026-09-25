@@ -1,0 +1,155 @@
+/*
+    Emelly Torres
+    CS 310 - Introduction to Web Development
+    Project 2
+    Fall 2026
+*/
+
+
+/* Overall Font */
+ 
+h2 {
+    font-family: 'Shrikhand', 'Alfa Slab One', serif;
+    font-size: 25px;
+}
+
+h3, h4, h5 { 
+    font-family: 'Fredoka', sans-serif; 
+    font-weight: 600; }
+
+p, li { 
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400; 
+    letter-spacing: 0.5px; 
+}
+
+/* Header */
+
+header {
+    background-color: #5c3d2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* The Catio Title */
+
+.ears {
+    letter-spacing: 80px;
+    margin-top: 10px; 
+    margin-bottom: -75px;  
+    padding-left: 67px;
+}
+
+h1 {
+    color: #eae2cc;
+    font-family: 'Shrikhand', 'Alfa Slab One', serif;
+    font-size: 3.5rem;
+    letter-spacing: 0.05em;
+    margin-bottom: -20px;
+}
+
+
+/* Nav Layout */
+.centered-nav {
+    background-color: #96B08E;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 0.5%;
+    margin-top: 2px;
+}
+
+/* Nav Link Attributes */
+.centered-nav a {
+    color: #eae2cc;
+    flex-grow: 10;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Nav Hover */
+.centered-nav a:hover {
+    background-color: #d2e6cc;
+    color: #6f816a;
+}
+
+/* Nav Active */
+.centered-nav a:active {
+    color: #6f816a;
+}
+
+/* Business Info */
+
+footer {
+  background-color: #5c3d2e;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 1px;
+  padding: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.address {
+    margin-top: 10px;
+}
+
+.email {
+    margin-bottom: 30px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-buttons img {
+    width: 25px;
+    height: 25px;
+}
+
+p {
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+/* Overall webpage format */
+
+body {
+    margin: 0px;
+}
+
+/*responsive layout*/
+@media (max-width: 786px) {
+    /* Header layout for phones */
+    header { 
+        flex-direction: column; /* Stacks header items vertically */
+        text-align: center;     /* Centers text inside header */
+        padding: 20px;          /* Adds spacing inside header */
+    }
+
+    /* Smaller logos on mobile */
+    .logo {                   /* Targets logo image */
+        width: 70px;            /* Reduces logo size for small screens */
+        margin-bottom: 10px;    /* Adds spacing below logo */
+    }
+
+    /* Navigation links stack nicely */
+    .centered-nav {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .centered-nav a {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    
+}

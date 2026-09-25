@@ -1,0 +1,114 @@
+form {
+    background-color: #f2ece4;
+    max-width: 520px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(180, 100, 100, 0.1);
+}
+
+h2, label {
+    color: #5c3d2e;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+h3 {
+    color:#5c3d2e;
+    font-weight: lighter;
+    font-size: 11px;
+    margin: 2px 0;
+    text-align: center;
+}
+
+h4 {
+    color: #5c3d2e;
+    font-family: 'Shrikhand', 'Alfa Slab One', serif;
+    font-weight: bold;
+    font-size: 8 px;
+    letter-spacing: 1px;;
+    margin: 2px;
+    text-align: center;
+}
+
+h3:last-of-type {
+    margin-bottom: 30px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #5c3d2e;
+    margin: 30px 0;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+input {
+    background-color: #f5fcf3;
+    border: 1px solid #8a9a7b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: small;
+    letter-spacing: 0.5px;
+    padding: 7px;
+    font-size: smaller;
+    width: 95%;
+}
+
+/* adult/child ticket drop down */
+
+.number-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.number-row label {
+    margin: 0;
+}
+
+.number-row select {
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    background-color: #f5fcf3;
+    border-radius: 6px;
+}
+
+
+/* button */
+
+button {
+    color: rgb(64, 86, 36);
+    background-color: #8a9a7b;
+    border: 1px solid #8a9a7b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 80%;
+    margin-top: 10px;
+    padding: 7px;
+    width: 20%;
+}
+
+button:hover {
+    color: #8a9a7b;
+    background-color: #5e6a52;
+}

@@ -1,0 +1,155 @@
+/*
+    Emelly Torres
+    CS 310 - Introduction to Web Development
+    Project 2
+    Fall 2026
+*/
+
+/* Reservation page layout */
+
+.layout {
+    align-items: stretch;
+    display: flex;
+    font-size: smaller;
+    gap: 30px;
+    justify-content: space-between; /* spread flex items across the available space */
+}
+
+
+/* Images on each side */
+
+.image {
+    height: 800px;
+    object-fit: cover;
+    width: 350px;
+}
+  
+
+/* Middle reservation information layout */
+
+.reservation-info {
+    text-align: center;
+    width: 370px;
+}
+
+
+/* Reservations title */
+
+.reservation-info h1 {
+    letter-spacing: 2px;
+    margin-left: -15%;
+    margin-right: -15%;
+    margin-bottom: -1%;
+    text-align: center;
+}
+
+
+/* Line underneath Reservations */
+
+hr {
+    border: none;
+    border-top: 3px double #000;
+    margin-left: -50%;
+    margin-bottom: 35px;
+    width: 200%;
+
+}
+
+
+/* Reservation Option headings */
+
+.reservation-info h2 {
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+
+/* Description underneath headings */
+
+.reservation-info h3 {
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: -45%;
+    margin-right: -45%;
+}
+
+/* Additonal Info beneath description */
+
+.reservation-info h4 {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: -35%;
+    margin-right: -35%;
+
+}
+
+.reservation-info p {
+    font-size: 14px;
+    font-weight: 450;
+    margin-top: -10px;
+    margin-left: -35%;
+    margin-right: -35%;
+}
+
+/*Phone layout*/
+@media (max-width: 786px) {
+    .layout {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .reservation-info {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .reservation-info h2,
+    .reservation-info h3,
+    .reservation-info h4,
+    .reservation-info p {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    hr {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .reservation-info h2 {
+        font-size: 18px;
+    }
+
+    .reservation-info h3 {
+        font-size: 10px;
+    }
+
+    .reservation-info h4 {
+        font-size: 9px;
+    }
+
+    .reservation-info p {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .layout {
+        padding: 10px;
+    }
+}
+

@@ -1,0 +1,124 @@
+<!--
+    Emelly Torres
+    file:///C:/Users/mletr/OneDrive/Desktop/webdev/Lecture%20Code/The%20Catio/form.html
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>☕ Reservations 😺 </title>
+        <link rel="stylesheet" href="thecatio_wbproj.css">
+        <link rel="stylesheet" href="form.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="ears">^       ^</h1>
+            <h1> ⚞ The Catio ⚟</h1>
+            <p style="margin-top: 25px">A Non-profit Cat cafe, Kitten lounge, <i>and your new favorite hangout spot.</i></p> <!-- added <i> to italicize words, directly put margin in this-->
+        </header>
+
+        <nav class="centered-nav">
+            <a href="index.html">Home</a> <!-- link to homepage -->
+            <a href="menu.html">Cafe Menu</a>  <!-- link to menu page -->
+            <a href="reservation.html">Sessions</a> <!-- link to session page -->
+            <a href="location.html">Location & Hours</a> <!-- link to location page -->
+            <a href="form.html">Make a Reservation!</a> <!-- link to reservation page -->
+        </nav>
+
+        <main>
+            <form class="formlayout" action="/action_page.php" method="get">
+                <h2> MAKE A RESERVATION! </h2>
+                <h3>Please fill in the following information to make a reservation.</h3>
+                <h3>Our staff will contact you by phone once your reservation has been reviewed.</h3>
+                <h3></h3>
+                
+                <hr>
+
+                <label for="fname">First Name:  </label>
+                <input type="text" name="fname">
+
+                <label for="lname">Last Name:  </label>
+                <input type="text" name="lname">
+
+                <label for="email">Email:  </label>
+                <input type="email" name="email">
+
+                <label for="password">Password:  </label>
+                <input type="password" name="password">
+
+                <label for="phone">Phone Number:  </label>
+                <input type="tel" tel="phone">
+                
+                <hr>
+
+                <h4>ALREADY HAVE AN ACCOUNT? </h4>
+
+                <label for="email">Email:  </label>
+                <input type="email" name="email">
+
+                <label for="password">Password:  </label>
+                <input type="password" name="password">
+
+                <hr>
+
+                <label for="reservationtype">Choose your desired session:</label>
+                <input list="reservationtypes" placeholder="Select a session below, or enter a special request." name="reservationtype" id="reservationtype">
+                    <datalist id="reservationtypes">
+                    <option value="Visit with the Cats">
+                    <option value="Visit with the Cats - Kids Hour">
+                    <option value="Cats & Code">
+                    <option value="Yoga With Cats">
+                    </datalist>
+
+                <div class="number-row">
+                    <label for="adult">Number of Adults:</label>
+                        <select name="adult" id="adult">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                </div>
+
+                <div class="number-row">
+                    <label for="child">Number of Children (5-17yrs):</label>
+                        <select name="child" id="child">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                </div>
+
+                <button type="button">next →</button>
+            </form>
+
+        </main>
+
+        <footer>
+            <p>1125 5th avenue, New York, NY 10128</p>
+            <p><b>Phone: </b> (555) 123 - 4567</p>
+            <p class="email"><b>Email:</b> thecatsmeow@gmail.com</p>
+
+            
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://bsky.app/">
+                    <img src="images/bs.png" alt="Bluesky">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

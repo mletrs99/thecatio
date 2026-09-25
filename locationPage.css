@@ -1,0 +1,88 @@
+/*
+    Emelly Torres
+    CS 310 - Introduction to Web Development
+    Project 2
+    Fall 2026
+*/
+
+
+/* table layout */
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 3px 8px #cccccc;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 500px;
+    
+}
+
+th {
+    border: 2px solid #566850;
+    background-color: #566850;
+    color: #eae2cc;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+td {
+    border: 2px solid #566850;
+    background-color: #96B08E;
+    color: #f5eedd;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+
+/* overall layout */
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 55px;
+    padding: 10px;
+}
+
+.location-photo {
+    width: 500px;
+    height: 660px;
+}
+
+.location-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*phone layout*/
+@media (max-width: 786px) {
+
+    .info-container {
+        display: block;
+        padding: 20px;
+    }
+
+    .location-photo {
+        display: none;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        border: 0;
+        margin: 20px auto;
+    }
+}

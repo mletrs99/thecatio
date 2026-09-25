@@ -1,0 +1,120 @@
+/**
+    Emelly Torres
+    CS 310 - Introduction to Web Development
+    Project 2
+    Fall 2026
+**/
+
+/* Store Front Image */
+.java img {
+    border-radius: 10px; /* rounds the corners of the image */
+    height: 330px; 
+    object-fit: cover; /* fills image area without stretching; may crop image */
+    object-position: 70% 72%; /* controls which part of image is shown when cropped */
+    margin: auto; /* centers image horizontally */
+    width: 99%; 
+}
+
+/* Our Story Heading */
+h2 {
+    font-size: 45px; 
+    letter-spacing: 2px;
+    margin-bottom: -30px; 
+    text-align: center; 
+}
+
+/* Decorative Line Under Our Story */
+h3 {
+    font-weight: lighter; 
+    text-align: center;
+}
+
+/* Our Story Layout */
+.story-container {
+    display: flex; /* places story text and media next to each other */
+    justify-content: center; /* centers both columns horizontally */
+    align-items: flex-start; /* lines up both columns at the top */
+    gap: 40px; /* space between story text and media */
+    padding: 50px;
+    
+}
+
+/* Story Text - Left Side */
+.story-text {
+    width: 467px; /* wider width makes paragraph more rectangular */
+    font-size: 13.5px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Video and Photo */
+.story-media {
+    display: flex; /* nested flex container */
+    flex-direction: column; /* stacks video above photo */
+    gap: 30px; /* space between video and photo */
+}
+
+/* YouTube Video */
+.story-media iframe {
+    display: block;
+    width: 500px;
+    height: 281px; 
+}
+
+/* Photo Under Video */
+.story-media img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover; /* fills area without stretching */
+    border-radius: 10px;
+}
+
+/* Additional Photo - Right Side */
+/* Formats image inside additional photo container */
+.story-extra-photo img {
+    width: 100%; /* fills width of its container */
+    height: 610px; /* matches approximate height of video + gap + photo */
+    object-fit: cover; /* fills area without stretching image */
+    border-radius: 10px; /* rounds corners */
+}
+
+/*Name in footer*/
+
+.myname {
+    background-color: #5c3d2e;
+    color: white;
+    margin-top: 10px;
+    margin-bottom:-10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+/*mobile view*/
+@media (max-width: 786px) {
+
+    .story-container {
+        display: block;
+        padding: 20px;
+    }
+
+    .story-text {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .story-media {
+        display: none;
+    }
+
+    .story-extra-photo {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .story-extra-photo img {
+        width: 100%;
+        height: auto;
+    }
+}
+
