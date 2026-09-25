@@ -93,6 +93,8 @@ h3 {
 /*mobile view*/
 @media (max-width: 786px) {
 
+@media (max-width: 786px) {
+
     .story-container {
         display: block;
         padding: 20px;
@@ -103,7 +105,7 @@ h3 {
         box-sizing: border-box;
     }
 
-    /* Keep this section, because storefront is inside it */
+    /* Keep this section because storefront is inside it */
     .story-media {
         display: block;
     }
@@ -124,13 +126,6 @@ h3 {
     /* Hide the other large cat photo */
     .story-extra-photo {
         display: none;
-    }
-
-    .story-extra-photo img {
-        width: 100%;
-        height: 610px;
-        object-fit: cover;
-        border-radius: 10px;
     }
 
 }
