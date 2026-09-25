@@ -135,15 +135,15 @@ hr {
 
     h2, h3 {
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
         box-sizing: border-box;
         text-align: center;
     }
 
-    /* * {
+    * {
         outline: 1px solid red;
-    } */
+    }
 
 }
 
