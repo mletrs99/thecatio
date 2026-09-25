@@ -104,7 +104,7 @@ hr {
 @media (max-width: 786px) {
     .layout {
         display: block;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
     }
 
@@ -146,10 +146,6 @@ hr {
     .reservation-info p {
         font-size: 10px;
         line-height: 1.4;
-    }
-
-    .layout {
-        padding: 10px;
     }
 }
 
