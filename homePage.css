@@ -106,24 +106,20 @@ h3 {
         box-sizing: border-box;
     }
 
-    /* Keep this section because storefront is inside it */
-    .story-media {
-        display: block;
-    }
-
     /* Hide only the YouTube video */
     .story-media iframe {
         display: none;
     }
 
     /* Storefront becomes mobile-friendly */
-    .storefront-photo {
-        display: block;
-        width: 85%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        margin: 20px auto 0;
-    }
+    .story-media .storefront-photo {
+    display: block;
+    width: 85%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 20px auto 0;
+}
 
     /* Hide the other large cat photo */
     .story-extra-photo {
