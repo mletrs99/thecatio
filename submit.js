@@ -19,7 +19,7 @@ submitButton.addEventListener("click", function() {
     const session = document.getElementById("reservationtype").value;
     const adult = Number(document.getElementById("adult").value);  //changes string value collected to a number
     const child = Number(document.getElementById("child").value);
-    const day = document.getElementByName("day").value;
+    const day = document.getElementById("day").value;
     const time = document.getElementById("time").value;
 
    //create a customer object
