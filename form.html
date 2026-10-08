@@ -29,7 +29,7 @@
         </nav>
 
         <main>
-            <form class="formlayout" action="/action_page.php" method="get">
+            <form id="ReservationForm" class="formlayout" action="/action_page.php" method="get">
                 <h2> MAKE A RESERVATION! </h2>
                 <h3>Please fill in the following information to make a reservation.</h3>
                 <h3>Our staff will contact you by phone once your reservation has been reviewed.</h3>
@@ -38,29 +38,29 @@
                 <hr>
 
                 <label for="fname">First Name:  </label>
-                <input type="text" name="fname">
+                <input type="text" name="fname" id="fname">
 
                 <label for="lname">Last Name:  </label>
-                <input type="text" name="lname">
+                <input type="text" name="lname" id="lname">
 
                 <label for="email">Email:  </label>
-                <input type="email" name="email">
+                <input type="email" name="email" id="email">
 
                 <label for="password">Password:  </label>
-                <input type="password" name="password">
+                <input type="password" name="password" id="password">
 
                 <label for="phone">Phone Number:  </label>
-                <input type="tel" tel="phone">
+                <input type="tel" name="phone" id="phone">
                 
                 <hr>
 
                 <h4>ALREADY HAVE AN ACCOUNT? </h4>
 
-                <label for="email">Email:  </label>
-                <input type="email" name="email">
+                <label for="loginemail">Email:</label>
+                <input type="email" name="loginemail" id="loginemail">
 
-                <label for="password">Password:  </label>
-                <input type="password" name="password">
+                <label for="loginpassword">Password:</label>
+                <input type="password" name="loginpassword" id="loginpassword"> 
 
                 <hr>
 
@@ -97,8 +97,39 @@
                         </select>
                 </div>
 
-                <button type="button">next →</button>
+                <hr>
+
+                <div class="number-row">
+                    <label for="day">Preferred Day:</label>
+                        <select class="reservation-dropdown" name="time" id="time">
+                            <option value="">Select a Day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select>
+                </div>
+
+                <div class="number-row">
+                    <label for="time">Preferred Time:</label>
+                        <select class="reservation-dropdown" name="time" id="time">                            <option value="">Select a Time</option>
+                            <option value="0900">9:00am</option>
+                            <option value="1000">10:00am</option>
+                            <option value="1100">11:00am</option>
+                            <option value="1200">12:00pm</option>
+                            <option value="1500">03:00pm</option>
+                            <option value="1600">04:00pm</option>
+                            <option value="1700">05:00pm</option>
+                            <option value="1800">06:00pm</option>
+                        </select>
+                </div>
+
+                <button type="button" id="submit" >submit</button>
             </form>
+
+           
 
         </main>
 
@@ -120,5 +151,7 @@
                 </a>
             </div>
         </footer>
+
+        <script src="submit.js"></script>
     </body>
 </html>
